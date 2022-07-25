@@ -7,8 +7,7 @@ A new Flutter project.
 This project is a starting point for a Flutter application.
 
 ## Used libs
-    - Bloc for statement widgets
-    - Floor for database
+    
 
 ## Running code
     - Because we are using freezed libs we need to generate
