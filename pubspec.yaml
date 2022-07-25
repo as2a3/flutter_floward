@@ -1,0 +1,48 @@
+name: flutter_floward
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.6 <3.0.0"
+
+dependencies:
+  cached_network_image: ^3.2.1
+  cupertino_icons: ^1.0.2
+
+  dartz: ^0.10.1
+  dio: ^4.0.6
+
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  fluttertoast: ^8.0.9
+
+  # FreeZed
+  freezed: ^2.1.0+1
+  freezed_annotation: ^2.1.0
+
+  get: ^4.6.5
+  get_storage: ^2.0.3
+
+  pretty_dio_logger: ^1.2.0-beta-1
+  retrofit: ^3.0.1+1
+
+dev_dependencies:
+  build_runner: ^2.1.2
+  flutter_lints: ^2.0.0
+  flutter_test:
+    sdk: flutter
+  json_serializable: ^6.3.1
+  retrofit_generator: ^4.0.2
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/img/
+    - assets/locales/
