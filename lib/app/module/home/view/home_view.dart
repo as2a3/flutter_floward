@@ -3,6 +3,7 @@ import 'package:flutter_floward/app/module/global_widget/circle_avatar_widget.da
 import 'package:flutter_floward/app/module/global_widget/loading_error_empty_widget.dart';
 import 'package:flutter_floward/app/module/home/controller/home_controller.dart';
 import 'package:flutter_floward/app/routes/app_routes.dart';
+import 'package:flutter_floward/app/service/settings_service.dart';
 import 'package:get/get.dart';
 
 class HomeView extends GetView<HomeController> {
@@ -18,6 +19,14 @@ class HomeView extends GetView<HomeController> {
           'Floward App'.tr,
         ),
         centerTitle: true,
+        actions: [
+          IconButton(
+            onPressed: controller.changeLanguage,
+            icon: Text(
+              controller.locale.value.tr,
+            ),
+          ),
+        ],
       ),
       body: Obx(() {
         return LoadingErrorEmptyWidget(

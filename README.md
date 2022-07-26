@@ -10,6 +10,3 @@ This project is a starting point for a Flutter application.
     
 
 ## Running code
-    - Because we are using freezed libs we need to generate
-    requirement files so, we will run this command line 
-    => flutter packages pub run build_runner build

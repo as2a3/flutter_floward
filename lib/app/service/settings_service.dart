@@ -154,6 +154,18 @@ class SettingsService extends GetxService {
     return Get.find<TranslationService>().fromStringToLocale(locale);
   }
 
+  Future<void> updateLocale(String value) async {
+    if (value.contains('_')) {
+      // en_US
+      Get.updateLocale(Locale(value.split('_').elementAt(0), value.split('_').elementAt(1)));
+    } else {
+      // en
+      Get.updateLocale(Locale(value));
+    }
+    await GetStorage().write('language', value);
+    // Get.rootController.setTheme(Get.find<SettingsService>().getLightTheme());
+  }
+
   ThemeMode getThemeMode() {
     final String themeMode = GetStorage().read<String>('theme_mode') ?? '';
     switch (themeMode) {
